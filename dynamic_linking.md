@@ -175,7 +175,3 @@ Binary → needs libfoo.so → looks in custom path → finds it → runs
 Binary has RPATH=/nix/store/.../lib embedded
 Binary → needs libfoo.so → looks in own RPATH → finds it → runs
 ```
-
------
-
-Does this clear everything up? Want me to explain any specific part deeper?​​​​​​​​​​​​​​​​
