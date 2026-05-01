@@ -26,7 +26,7 @@ Everything outside these ranges is a public IP. Your router is the bouncer stand
 
 How does your router know which device a response belongs to? It keeps a NAT table. Every time your laptop makes a request, the router logs it. When the response comes back, the router checks the table and delivers it to the right device.
 
-The catch: if nobody on your network initiated the connection, the router has no table entry and drops the packet. This is why running a home server requires port forwarding. You manually tell the router "anything coming in on port 3000, always send it to my laptop at `192.168.1.2`." That is a permanent table entry.
+The catch: if nobody on your network initiated the connection, the router has no table entry and drops the packet. This is why running a home server requires port forwarding. Port forwarding tells your router to always send incoming traffic on a specific port to a specific private IP on your network. Port forwarding tells your router to always send incoming traffic on a specific port to a specific private IP on your network. You manually tell the router "anything coming in on port 3000, always send it to my laptop at `192.168.1.2`." That is a permanent table entry.
 
 ## DHCP: the automatic address vending machine
 
